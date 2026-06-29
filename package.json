@@ -1,0 +1,47 @@
+{
+  "name": "alsacms",
+  "private": true,
+  "version": "1.0.0",
+  "main": "package.json",
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "sanity build",
+    "deploy": "sanity deploy",
+    "deploy-graphql": "sanity graphql deploy",
+    "dev": "sanity dev",
+    "start": "sanity start",
+    "seed:event-preview": "sanity exec scripts/seedEventPreview.ts --with-user-token",
+    "seed:publication": "sanity exec scripts/seedPublication.ts --with-user-token",
+    "seed:founder": "sanity exec scripts/seedFounder.ts --with-user-token",
+    "seed:international-board": "sanity exec scripts/seedInternationalBoard.ts --with-user-token",
+    "seed:national-board": "sanity exec scripts/seedNationalBoard.ts --with-user-token",
+    "seed:director-greeting": "sanity exec scripts/seedDirectorGreeting.ts --with-user-token",
+    "seed:local-chapter": "sanity exec scripts/seedLocalChapter.ts --with-user-token"
+  },
+  "keywords": [
+    "sanity"
+  ],
+  "dependencies": {
+    "@sanity/image-url": "^2.1.1",
+    "@sanity/vision": "^5.26.0",
+    "create-sanity": "^5.2.14",
+    "next-sanity": "^12.3.2",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "sanity": "^5.26.0",
+    "styled-components": "^6.1.18"
+  },
+  "devDependencies": {
+    "@sanity/eslint-config-studio": "^6.0.0",
+    "@types/react": "^19.2.14",
+    "eslint": "^9.28",
+    "prettier": "^3.5",
+    "typescript": "^5.8"
+  },
+  "prettier": {
+    "bracketSpacing": false,
+    "printWidth": 100,
+    "semi": false,
+    "singleQuote": true
+  }
+}

@@ -7,6 +7,7 @@ import footer from './footer/footer'
 import law_development_column from './publication-full/law_development_column'
 import publication_preview from './publication-preview/publication-preview'
 import post_samework_writing from './publication-full/post_samework_writing'
+import global_litera from './publication-full/global_litera'
 import writing_by_edev from './publication-full/writing_by_edev'
 import resources from './resources/resources'
 import directorGreeting from './director-greeting/director-greeting'
@@ -27,5 +28,6 @@ export const schemaTypes = [
   law_development_column,
   post_samework_writing,
   writing_by_edev,
+  global_litera,
   resources,
 ]

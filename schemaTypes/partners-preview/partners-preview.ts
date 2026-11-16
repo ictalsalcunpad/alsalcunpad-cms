@@ -1,8 +1,14 @@
 export default {
   name: 'partners_preview',
-  title: 'HOME - Partners Preview',
+  title: 'Partners',
   type: 'document',
   fields: [
+    {
+      name: 'partner_name',
+      title: 'Partner Name',
+      type: 'string',
+      validation: (Rule: {required: () => any}) => Rule.required(),
+    },
     {
       name: 'partners_logo_image',
       title: 'Partners Logo Image',

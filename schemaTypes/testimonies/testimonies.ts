@@ -1,25 +1,20 @@
 export default {
-  name: 'testimonies',
-  title: 'HOME - Testimonies (What they said about us)',
+  name: 'event_recap',
+  title: 'HOME - Event Recap',
   type: 'document',
   fields: [
     {
-      name: 'nama_orang',
-      title: 'Nama Orang',
+      name: 'recap_name',
+      title: 'Event Recap Name',
       type: 'string',
       validation: (Rule: {required: () => any}) => Rule.required(),
     },
     {
-      name: 'role',
-      title: 'Role',
-      type: 'string',
-      description: 'Akun Instagram (contoh: @ricolubis)',
-      validation: (Rule: {required: () => any}) => Rule.required(),
-    },
-    {
-      name: 'testimoni',
-      title: 'Testimoni',
-      type: 'text',
+      name: 'recap_image',
+      type: 'image',
+      options:{
+        hotspot: true,
+      },
       validation: (Rule: {required: () => any}) => Rule.required(),
     },
     {
@@ -30,3 +25,5 @@ export default {
     },
   ],
 }
+
+

@@ -1,6 +1,6 @@
 import boardPreview from './board-preview/board-preview'
 import eventPreview from './event-preview/event-preview'
-import testimonies from './testimonies/testimonies'
+import event_recap from './testimonies/testimonies'
 import partnersPreview from './partners-preview/partners-preview'
 import merchandisePreview from './merchandise-preview/merchandise-preview'
 import footer from './footer/footer'
@@ -17,7 +17,7 @@ import boardMember from './board-member/board-member'
 export const schemaTypes = [
   boardPreview,
   publication_preview,
-  testimonies,
+  event_recap,
   partnersPreview,
   merchandisePreview,
   footer,

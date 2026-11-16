@@ -1,0 +1,8 @@
+{
+      name: 'recap_image',
+      type: 'image',
+      options:{
+        hotspot: true,
+      },
+      validation: (Rule: {required: () => any}) => Rule.required(),
+    },

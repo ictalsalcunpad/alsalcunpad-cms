@@ -1,8 +1,14 @@
 export default {
   name: 'merchandise_preview',
-  title: 'HOME - Merchandise Preview',
+  title: 'Merchandise',
   type: 'document',
   fields: [
+     {
+      name: 'merchandise_name',
+      title: 'Merchandise Name',
+      type: 'string',
+      validation: (Rule: {required: () => any}) => Rule.required(),
+    },
     {
       name: 'merchandise_type',
       title: 'Merchandise Type',
@@ -15,12 +21,6 @@ export default {
           {title: 'Other', value: 'other'},
         ],
       },
-      validation: (Rule: {required: () => any}) => Rule.required(),
-    },
-    {
-      name: 'merchandise_name',
-      title: 'Merchandise Name',
-      type: 'string',
       validation: (Rule: {required: () => any}) => Rule.required(),
     },
     {

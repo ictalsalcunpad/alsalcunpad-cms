@@ -37,9 +37,12 @@ const positionOptions = [
   {title: 'Academic - Law Development', value: 'law-development'},
   {title: 'Academic - English Development', value: 'english-development'},
   {title: 'Academic - Seminar and Workshop', value: 'seminar-and-workshop'},
-  {title: 'Financial/ICT - Head and Vice Head', value: 'head-and-vice-head'},
+  {title: 'Financial - Head', value: 'head-finance'},
+  {title: 'Financial - Vice Head', value: 'vice-head-finance'},
   {title: 'Financial - Funding', value: 'funding'},
   {title: 'Financial - Entrepreneurship', value: 'entrepreneurship'},
+  {title: 'ICT - Head', value: 'head-ict'},
+  {title: 'ICT - Vice Head', value: 'vice-head-ict'},
   {title: 'ICT - Creative', value: 'creative'},
   {title: 'ICT - Networking Development', value: 'networking-development'},
 ]
@@ -56,8 +59,8 @@ const allowedPositionsByCategory: Record<string, string[]> = {
   internal: ['head', 'alsa-development', 'domestic-affair', 'fun-and-gathering'],
   external: ['head', 'alsa-visit', 'alumni-affairs', 'foreign-affairs', 'social-activities'],
   academic: ['head', 'law-development', 'english-development', 'seminar-and-workshop'],
-  financial: ['head-and-vice-head', 'funding', 'entrepreneurship'],
-  ict: ['head-and-vice-head', 'creative', 'networking-development'],
+  financial: ['head-finance','vice-head-finance', 'funding', 'entrepreneurship'],
+  ict: ['head-ict','vice-head-ict', 'creative', 'networking-development'],
 }
 
 export default {
